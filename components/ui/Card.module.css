@@ -1,7 +1,7 @@
 .container {
-    width: 20rem;
-    height: 27rem;
-    margin: 2rem;
+    width: 26rem;
+    height: 34rem;
+    margin: 0 3rem 0 3rem;
 }
 
 .card {
@@ -10,7 +10,6 @@
     height: 100%;
     border-radius: 0.5rem;
     box-shadow: 6px 3px 9px rgba(0, 0, 0, 0.5);
-    /* background-color: rgb(249, 252, 255); */
     transform-style: preserve-3d;
     transition: all 0.5s ease;
 }
@@ -22,9 +21,7 @@
 
 .front,
 .back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    z-index: 1;
     border-radius: 0.5rem;
     height: 100%;
     width: 100%;
@@ -36,6 +33,14 @@
         rgb(249, 252, 255) 25%,
         rgb(243, 249, 255)
     );
+}
+
+.container:hover .front {
+    z-index: 2;
+}
+
+.container:hover .back {
+    z-index: 2;
 }
 
 .back {

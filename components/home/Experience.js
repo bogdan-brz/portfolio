@@ -1,15 +1,27 @@
 import Link from "next/link";
-import { Fragment } from "react";
 import styles from "./Experience.module.css";
+import laptopImg from "../../public/laptop.jpg";
+import Image from "next/image";
 
-const Experience = () => {
+const ExperienceFront = () => {
     return (
-        <Fragment>
-            <h3 className={styles.title}>
-                <Link href="/experience">My experience in web development</Link>
-            </h3>
-        </Fragment>
+        <div className={styles.front}>
+            <Image src={laptopImg} layout="fill" />
+            <h3 className={styles.title}>Experience</h3>
+        </div>
     );
 };
 
-export default Experience;
+const ExperienceBack = () => {
+    return (
+        <div className={styles.back}>
+            <h3 className={styles.title}>
+                <Link href="/experience">
+                    My experience in web development and machine learning
+                </Link>
+            </h3>
+        </div>
+    );
+};
+
+export { ExperienceFront, ExperienceBack };

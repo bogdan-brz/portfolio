@@ -1,0 +1,42 @@
+.header {
+    font-size: 1.2rem;
+    position: absolute;
+    /* color: rgb(59, 59, 59); */
+    color: black;
+}
+
+.header:hover {
+    cursor: pointer;
+    /* color: black; */
+    color: var(--color);
+}
+
+.homeText {
+    margin-right: 0.5rem;
+    transition: 0.5s;
+}
+
+.header:hover .homeText {
+    margin-left: 23px;
+}
+
+.homeIcon {
+    transition: 0.5s;
+}
+
+.arrowIcon {
+    /* display: none; */
+    margin-right: 0.5rem;
+    scale: 0;
+    /* transform: scale(0.5); */
+    transition: 0.5s;
+    position: absolute;
+    top: 1px;
+    transform-origin: left center;
+}
+
+.header:hover .arrowIcon {
+    /* display: inline; */
+    scale: 1;
+    transform: scale(1);
+}

@@ -1,8 +1,9 @@
-import Card from "../ui/Card";
-import Aspirations from "./Aspirations";
-import Experience from "./Experience";
 import styles from "./Home.module.css";
-import Story from "./Story";
+import Card from "../ui/Card";
+// import { AspirationsBack, AspirationsFront } from "./Aspirations";
+import { ExperienceBack, ExperienceFront } from "./Experience";
+// import { StoryBack, StoryFront } from "./Story";
+import { StoAndAspBack, StoAndAspFront } from "./StoAndAsp";
 
 const Home = () => {
     return (
@@ -16,19 +17,12 @@ const Home = () => {
                 developer for your business.
             </h2>
             <div className={styles.cards}>
-                <Card
-                    front={<h3 className={styles.cardFrontTitle}>Story</h3>}
-                    back={<Story />}></Card>
-                <Card
-                    front={
-                        <h3 className={styles.cardFrontTitle}>Experience</h3>
-                    }
-                    back={<Experience />}></Card>
-                <Card
-                    front={
-                        <h3 className={styles.cardFrontTitle}>Aspirations</h3>
-                    }
-                    back={<Aspirations />}></Card>
+                {/* <Card front={<StoryFront />} back={<StoryBack />}></Card> */}
+                <Card front={<ExperienceFront />} back={<ExperienceBack />} />
+                <Card front={<StoAndAspFront />} back={<StoAndAspBack />} />
+                {/* <Card
+                    front={<AspirationsFront />}
+                    back={<AspirationsBack />}></Card> */}
             </div>
         </div>
     );
