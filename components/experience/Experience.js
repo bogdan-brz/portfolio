@@ -6,9 +6,10 @@ const Experience = () => {
     return (
         <div className={styles.page}>
             <div className={styles.content}>
-                <HomeBtn hoverColor="rgb(0, 0, 255)" />
+                <HomeBtn color="rgb(0, 0, 0" hoverColor="rgb(0, 0, 255)" />
                 <h1 className={styles.title}>Web Development</h1>
                 <div className="column">
+                    <h2 className={styles.subtitle}>My Projects:</h2>
                     <Project
                         name="Pierogi restaurant website"
                         githubLink="https://github.com/bogdan-brz/restaurant-website"

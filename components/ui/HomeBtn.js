@@ -8,7 +8,7 @@ const HomeBtn = (props) => {
     return (
         <a
             className={styles.header}
-            style={{ "--color": props.hoverColor }}
+            style={{ "--hoverColor": props.hoverColor, "--color": props.color }}
             href="/"
             onClick={(e) => {
                 e.preventDefault();

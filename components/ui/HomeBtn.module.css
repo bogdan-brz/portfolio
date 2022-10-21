@@ -2,13 +2,13 @@
     font-size: 1.2rem;
     position: absolute;
     /* color: rgb(59, 59, 59); */
-    color: black;
+    color: var(--color);
 }
 
 .header:hover {
     cursor: pointer;
     /* color: black; */
-    color: var(--color);
+    color: var(--hoverColor);
 }
 
 .homeText {
