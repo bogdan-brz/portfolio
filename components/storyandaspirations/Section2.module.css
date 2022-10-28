@@ -1,0 +1,132 @@
+.section2 {
+    z-index: 1;
+    position: absolute;
+    top: 770px;
+    width: 1650px;
+    height: 30rem;
+    background: linear-gradient(
+        to bottom,
+        rgb(69, 69, 72),
+        rgb(242, 244, 255) 60px,
+        rgb(242, 244, 255) 80%,
+        rgb(69, 69, 72)
+    );
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    width: 30rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 4.6rem;
+    left: 3rem;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.logos {
+    width: 70rem;
+    padding: 0 7rem 0 7rem;
+    position: absolute;
+    left: 30rem;
+    top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    position: relative;
+}
+
+.logo2 {
+    margin-right: 4rem;
+}
+
+.gradCapImg {
+    position: absolute;
+    top: 270px;
+    left: 665px;
+    width: 166.4px;
+    height: 86.32px;
+    animation: 6s ease-in-out infinite fly, 2s linear infinite rotate,
+        6s linear infinite disappear;
+}
+
+.questionMark {
+    position: absolute;
+    top: 250px;
+    left: 1365px;
+    font-size: 7.5rem;
+    color: rgb(1, 84, 158);
+    animation: 6s linear infinite appear;
+}
+
+@keyframes fly {
+    0% {
+        left: 665px;
+    }
+    50% {
+        left: 1315px;
+    }
+    100% {
+        left: 665px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

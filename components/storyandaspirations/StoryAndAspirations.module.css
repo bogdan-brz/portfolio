@@ -1,0 +1,10 @@
+.page {
+    position: relative;
+    width: 100vw;
+    height: 10000px;
+    background-color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

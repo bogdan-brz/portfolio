@@ -1,0 +1,150 @@
+.section3 {
+    z-index: 2;
+    position: absolute;
+    top: 1180px;
+    width: 1650px;
+    height: 1440px;
+    background-image: url("/rugged-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+}
+
+.content {
+    margin-top: -2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 21rem;
+}
+
+.row1 {
+    z-index: 4;
+    justify-content: flex-start;
+    /* margin: 1rem 0 1rem 0; */
+}
+
+.text1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    width: 30rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.img1 {
+    position: relative;
+    width: 500px;
+    height: 283px;
+}
+
+.logo1 {
+    position: relative;
+    width: 461.8px;
+    height: 156px;
+}
+
+.row2 {
+    z-index: 3;
+    justify-content: flex-end;
+    box-shadow: 0 0 8px;
+    background-color: rgb(234, 234, 234);
+    /* margin: 1rem 0 1rem 0; */
+}
+
+.text2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    width: 30rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.logo2 {
+    position: relative;
+    width: 145.8px;
+    height: 156px;
+    margin: 0 3rem 0 0;
+}
+
+.row3 {
+    z-index: 4;
+    justify-content: flex-start;
+}
+
+.text3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    width: 30rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.logo3 {
+    position: relative;
+    width: 334.1px;
+    height: 130px;
+    margin-right: 3.5rem;
+}
+
+.logo4 {
+    position: relative;
+    width: 150px;
+    height: 130px;
+    margin-right: 3.5rem;
+}
+
+.logo5 {
+    position: relative;
+    width: 216.7px;
+    height: 130px;
+}
+
+.row4 {
+    z-index: 3;
+    justify-content: flex-end;
+    box-shadow: 0 0 8px;
+    background-color: rgb(234, 234, 234);
+}
+
+.text4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    width: 30rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.video {
+    height: 300px;
+    margin: 0 2rem 0 2rem;
+}
+
+.video video {
+    height: 100%;
+}
+
+.logo6 {
+    position: relative;
+    height: 171.6px;
+    width: 267.7px;
+}

@@ -1,7 +1,7 @@
-import StoAndAsp from "../components/stoandasp/StoAndAsp";
+import StoryAndAspirations from "../components/storyandaspirations/StoryAndAspirations";
 
 const story = () => {
-    return <StoAndAsp />;
+    return <StoryAndAspirations />;
 };
 
 export default story;
