@@ -46,3 +46,27 @@
 .back {
     transform: rotateY(180deg);
 }
+
+@media (max-width: 960px) {
+    .container {
+        width: 20.8rem;
+        height: 27.2rem;
+        margin: 0 0 3rem 0;
+    }
+}
+
+@media (min-width: 2500px) {
+    .container {
+        width: 28.6rem;
+        height: 37.4rem;
+        margin: 0 4rem 0 4rem;
+    }
+}
+
+@media (min-width: 3500px) {
+    .container {
+        width: 31.5rem;
+        height: 41.1rem;
+        margin: 0 5rem 0 5rem;
+    }
+}

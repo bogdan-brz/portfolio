@@ -3,15 +3,9 @@
     position: absolute;
     top: 1180px;
     width: 1650px;
-    height: 1440px;
-    background-image: url("/rugged-background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 4rem;
-}
-
-.content {
-    margin-top: -2rem;
+    height: 1375px;
+    background-color: white;
+    border-radius: 2rem;
 }
 
 .row {
@@ -24,7 +18,6 @@
 .row1 {
     z-index: 4;
     justify-content: flex-start;
-    /* margin: 1rem 0 1rem 0; */
 }
 
 .text1 {
@@ -56,7 +49,6 @@
     justify-content: flex-end;
     box-shadow: 0 0 8px;
     background-color: rgb(234, 234, 234);
-    /* margin: 1rem 0 1rem 0; */
 }
 
 .text2 {
@@ -145,6 +137,118 @@
 
 .logo6 {
     position: relative;
-    height: 171.6px;
     width: 267.7px;
+    height: 171.6px;
+}
+
+@media (min-width: 2500px) {
+    .section3 {
+        width: 2500px;
+        top: 1630px;
+        height: 1547px;
+        border-radius: 3rem;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 1.05rem;
+        margin: 6rem;
+    }
+    .row {
+        height: 23.5rem;
+        padding: 0 3rem 0 3rem;
+    }
+    .img1 {
+        width: 550.2px;
+        height: 311.41px;
+        margin: 0 3rem 0 3rem;
+    }
+    .logo1 {
+        width: 508.2px;
+        height: 171.7px;
+    }
+    .logo2 {
+        width: 160px;
+        height: 171.7px;
+        margin-right: 4rem;
+    }
+    .logo3 {
+        width: 367.7px;
+        height: 143px;
+        margin-right: 5rem;
+    }
+    .logo4 {
+        width: 165px;
+        height: 165px;
+        margin-right: 5rem;
+    }
+    .logo5 {
+        width: 238.4px;
+        height: 165px;
+    }
+    .logo6 {
+        width: 294px;
+        height: 188px;
+    }
+    .video {
+        height: 321px;
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 3500px) {
+    .section3 {
+        top: 2250px;
+        width: 3500px;
+        height: 1720px;
+        border-radius: 4rem;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 1.1rem;
+        margin: 8rem;
+    }
+    .row {
+        height: 26rem;
+        padding: 0 5rem 0 5rem;
+    }
+    .img1 {
+        width: 600px;
+        height: 339.6px;
+        margin: 0 5rem 0 5rem;
+    }
+    .logo1 {
+        width: 554.2px;
+        height: 187.2px;
+    }
+    .logo2 {
+        width: 174.96px;
+        height: 187.2px;
+        margin-right: 7rem;
+    }
+    .logo3 {
+        width: 400.9px;
+        height: 156px;
+        margin-right: 7rem;
+    }
+    .logo4 {
+        width: 180px;
+        height: 156px;
+        margin-right: 7rem;
+    }
+    .logo5 {
+        width: 260px;
+        height: 156px;
+    }
+    .logo6 {
+        width: 321.2px;
+        height: 205.9px;
+    }
+    .video {
+        height: 350px;
+        margin-left: 5rem;
+    }
 }

@@ -7,10 +7,14 @@
     background: linear-gradient(
         to bottom,
         rgb(69, 69, 72),
-        rgb(242, 244, 255) 60px,
+        rgb(242, 244, 255) 20%,
         rgb(242, 244, 255) 80%,
         rgb(69, 69, 72)
     );
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
 }
 
 .text {
@@ -21,6 +25,7 @@
     color: white;
     padding: 1.5rem;
     border-radius: 1rem;
+    height: fit-content;
     position: absolute;
     top: 4.6rem;
     left: 3rem;
@@ -128,5 +133,81 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes fly2500 {
+    0% {
+        left: 1200px;
+    }
+    50% {
+        left: 1840px;
+    }
+    100% {
+        left: 1200px;
+    }
+}
+
+@keyframes fly3500 {
+    0% {
+        left: 1640px;
+    }
+    50% {
+        left: 2280px;
+    }
+    100% {
+        left: 1640px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .section2 {
+        top: 1170px;
+        width: 2500px;
+        height: 500px;
+    }
+    .text {
+        left: 38rem;
+        top: 7rem;
+        font-size: 1.05rem;
+    }
+    .logos {
+        left: 64rem;
+        top: 6rem;
+    }
+    .gradCapImg {
+        top: 19.5rem;
+        animation: 6s ease-in-out infinite fly2500, 2s linear infinite rotate,
+            6s linear infinite disappear;
+    }
+    .questionMark {
+        left: 1903px;
+        top: 18rem;
+    }
+}
+
+@media (min-width: 3500px) {
+    .section2 {
+        top: 1640px;
+        width: 3500px;
+        height: 700px;
+    }
+    .text {
+        left: 60rem;
+        top: 12rem;
+        font-size: 1.1rem;
+    }
+    .logos {
+        left: 90rem;
+        top: 11rem;
+    }
+    .gradCapImg {
+        top: 26rem;
+        animation: 6s ease-in-out infinite fly3500, 2s linear infinite rotate,
+            6s linear infinite disappear;
+    }
+    .questionMark {
+        left: 2320px;
+        top: 23rem;
     }
 }

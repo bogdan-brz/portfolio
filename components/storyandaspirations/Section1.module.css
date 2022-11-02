@@ -5,6 +5,16 @@
     left: 2rem;
 }
 
+/* .marker {
+    position: absolute;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 1380px;
+    top: 265px;
+} */
+
 .disclaimer {
     position: absolute;
     color: white;
@@ -118,3 +128,71 @@
         top: 230px;
     }
 } */
+
+@media (min-width: 2500px) {
+    .section1 {
+        width: 2500px;
+        height: 1259px;
+    }
+    .title {
+        font-size: 3.5rem;
+        font-weight: 400;
+        top: 1.5rem;
+    }
+    .homeBtn {
+        top: 1.25rem;
+        left: 2.5rem;
+    }
+    .text1 {
+        left: 1200px;
+        top: 390px;
+        font-size: 1.05rem;
+    }
+    .text2 {
+        left: 1200px;
+        top: 530px;
+        font-size: 1.05rem;
+    }
+    .disclaimer {
+        font-size: 0.95rem;
+        left: 1835px;
+    }
+    .planeImg {
+        width: 78.1px;
+        height: 81.4px;
+    }
+}
+
+@media (min-width: 3500px) {
+    .section1 {
+        width: 3500px;
+        height: 1762px;
+    }
+    .title {
+        font-size: 4rem;
+        font-weight: 500;
+        top: 2rem;
+    }
+    .homeBtn {
+        top: 1.5rem;
+        left: 3rem;
+    }
+    .text1 {
+        left: 1700px;
+        top: 560px;
+        font-size: 1.1rem;
+    }
+    .text2 {
+        left: 1700px;
+        top: 700px;
+        font-size: 1.1rem;
+    }
+    .disclaimer {
+        font-size: 1rem;
+        left: 2810px;
+    }
+    .planeImg {
+        width: 85.2px;
+        height: 88.8px;
+    }
+}

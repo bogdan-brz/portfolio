@@ -27,9 +27,8 @@
     color: white;
 }
 
-.subtitle {
-    font-size: 2.2rem;
-    font-weight: 200;
-    margin: 0 0 0 3.5rem;
+.disclaimer {
     width: 100%;
+    margin-bottom: 0;
+    margin-left: 4rem;
 }

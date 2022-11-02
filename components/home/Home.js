@@ -9,20 +9,17 @@ const Home = () => {
     return (
         <div className={styles.page}>
             <h1 className={styles.title}>
-                Hi, I'm <span>Bogdan</span>
+                Hi, I&apos;m <span>Bogdan</span>
             </h1>
             <h2 className={styles.subtitle}>
                 In this portfolio you will find my story, experience, and
-                aspirations. You will also find out whether I'm the right web
-                developer for your business.
+                aspirations. The experience page lists my projects in web
+                development and machine learning, and the story and aspirations
+                page provides some information about me.
             </h2>
             <div className={styles.cards}>
-                {/* <Card front={<StoryFront />} back={<StoryBack />}></Card> */}
                 <Card front={<ExperienceFront />} back={<ExperienceBack />} />
                 <Card front={<StoAndAspFront />} back={<StoAndAspBack />} />
-                {/* <Card
-                    front={<AspirationsFront />}
-                    back={<AspirationsBack />}></Card> */}
             </div>
         </div>
     );

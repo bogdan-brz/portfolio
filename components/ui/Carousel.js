@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { Transition } from "react-transition-group";
+import AtributionOverlay from "./AtributionOverlay";
 
 const Carousel = (props) => {
     const [currCarouselIndex, setCurrCarouselIndex] = useState(0);
@@ -76,6 +77,9 @@ const Carousel = (props) => {
                                     }
                                     src={image.src}
                                 />
+                                <AtributionOverlay>
+                                    {props.attributions[i]}
+                                </AtributionOverlay>
                             </div>
                         )}
                     </Transition>

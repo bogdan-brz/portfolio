@@ -17,7 +17,7 @@ const ExperienceBack = () => {
         <div className={styles.back}>
             <h3 className={styles.title}>
                 <Link href="/experience">
-                    My experience in web development and machine learning
+                    My projects in web development and machine learning
                 </Link>
             </h3>
         </div>

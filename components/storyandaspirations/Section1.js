@@ -3,6 +3,9 @@ import HomeBtn from "../ui/HomeBtn";
 import Image from "next/image";
 import planeImg from "../../public/plane-img-2.png";
 import { useEffect, useState } from "react";
+import AtributionOverlay from "../ui/AtributionOverlay";
+
+const planeAtribLink = "https://www.vecteezy.com/free-vector/airplane-icon";
 
 const aTanIn360 = (opposite, adjacent) => {
     let angle =
@@ -14,39 +17,73 @@ const aTanIn360 = (opposite, adjacent) => {
     return angle;
 };
 
+let startLeft;
+let startTop;
+let startRot;
+let endLeft;
+let a;
+let b;
+let c;
+let timeMulitiplier;
+
 const Section1 = () => {
-    const [planePos, setPlanePos] = useState({ left: 880, top: 140 });
-    const [planeRot, setPlaneRot] = useState(300);
-    const [prevPlanePos, setPrevPlanePos] = useState({ left: 885, top: 143 });
+    useEffect(() => {
+        if (window.innerWidth >= 3500) {
+            startLeft = 1930;
+            startTop = 370;
+            startRot = 300;
+            endLeft = 575;
+            a = 0.0005;
+            b = -1.37;
+            c = 1150;
+            timeMulitiplier = 1.5;
+        } else if (window.innerWidth >= 2500) {
+            startLeft = 1380;
+            startTop = 265;
+            startRot = 300;
+            endLeft = 415;
+            a = 0.00075;
+            b = -1.4607;
+            c = 852;
+            timeMulitiplier = 1;
+        } else {
+            startLeft = 880;
+            startTop = 140;
+            startRot = 300;
+            endLeft = 250;
+            a = 0.001;
+            b = -1.273;
+            c = 485.84;
+            timeMulitiplier = 1;
+        }
+    }, []);
+    const [planeData, setPlaneData] = useState({
+        left: startLeft,
+        top: startTop,
+        rot: startRot,
+    });
     let timer = 0;
-    let _planePos;
-    let _prevPlanePos;
     const getX = (time) => {
-        return Math.max(880 - (time % (880 - 200)), 250);
+        return Math.max(
+            startLeft - (time % (startLeft - 0.8 * endLeft)),
+            endLeft
+        );
     };
     const yOfX = (x) => {
-        return 0.001 * x ** 2 - 1.273 * x + 485.84;
+        return a * x ** 2 + b * x + c;
     };
     useEffect(() => {
         setInterval(() => {
-            const currX = getX(timer);
-            setPlanePos((pos) => {
-                _prevPlanePos = pos;
-                setPrevPlanePos(pos);
-                const newPos = {
-                    left: currX,
-                    top: yOfX(currX),
-                };
-                _planePos = newPos;
-                return newPos;
+            setPlaneData((data) => {
+                const newLeft = getX(timer);
+                const newTop = yOfX(newLeft);
+                const newRot = aTanIn360(
+                    (newTop - data.top) * 1.3,
+                    data.left - newLeft
+                );
+                return { left: newLeft, top: newTop, rot: newRot };
             });
-            timer += 1;
-            setPlaneRot(
-                aTanIn360(
-                    (_planePos.top - prevPlanePos.top) * 1.3,
-                    prevPlanePos.left - _planePos.left
-                )
-            );
+            timer += timeMulitiplier;
         }, 10);
     }, []);
     return (
@@ -72,11 +109,14 @@ const Section1 = () => {
             <div
                 className={styles.planeImg}
                 style={{
-                    left: `${planePos.left}px`,
-                    top: `${planePos.top}px`,
-                    transform: `rotate(${-planeRot + 260}deg)`,
+                    left: `${planeData.left}px`,
+                    top: `${planeData.top}px`,
+                    transform: `rotate(${-planeData.rot + 270}deg)`,
                 }}>
                 <Image src={planeImg} layout="fill" />
+                <AtributionOverlay width={120}>
+                    image from: <a href={planeAtribLink}>vecteezy.com</a>
+                </AtributionOverlay>
             </div>
         </div>
     );

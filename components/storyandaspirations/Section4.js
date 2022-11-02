@@ -4,20 +4,50 @@ import laptopWebDev from "../../public/laptop-webdev.png";
 import officeWebDev from "../../public/office-webdev.png";
 import laptopMl from "../../public/laptop-ml.png";
 import officeMl from "../../public/office-ml.png";
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+
+const laptopAtribLink = (
+    <Fragment>
+        image by rawpixel.com on:{" "}
+        <a href="https://www.freepik.com/free-photo/mockup-copy-space-blank-screen-concept_16447731.htm#page=2&query=laptop%20blank%20screen&position=26&from_view=search&track=sph">
+            Freepik
+        </a>
+    </Fragment>
+);
+const officeAtribLink = (
+    <Fragment>
+        image from: <a href="https://unsplash.com/">Unsplash</a>
+    </Fragment>
+);
 
 const Section4 = () => {
+    const [carouselSize, setCarouselSize] = useState({ height: 0, width: 0 });
+    useEffect(() => {
+        if (window.innerWidth >= 3500) {
+            setCarouselSize({ width: 528, height: 600 });
+        } else if (window.innerWidth >= 2500) {
+            setCarouselSize({ width: 484, height: 550 });
+        } else {
+            setCarouselSize({ width: 440, height: 500 });
+        }
+    }, []);
     const [highlightedTextId, setHighlightedTextId] = useState(0);
     return (
         <div className={styles.section4}>
-            <h1 className={styles.title2}>My Aspirations - roughly</h1>
+            <h1 className={styles.title}>My Aspirations - roughly</h1>
             <div className={styles.content}>
                 <Carousel
-                    width={440}
-                    height={500}
+                    width={carouselSize.width}
+                    height={carouselSize.height}
                     slideSpeed={6000}
                     selfSliding={true}
                     images={[laptopWebDev, officeWebDev, laptopMl, officeMl]}
+                    attributions={[
+                        laptopAtribLink,
+                        officeAtribLink,
+                        laptopAtribLink,
+                        officeAtribLink,
+                    ]}
                     notify={(id) => setHighlightedTextId(id)}
                 />
                 <div className={styles.texts}>

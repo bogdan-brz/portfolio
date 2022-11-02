@@ -67,3 +67,7 @@
     color: rgb(57, 57, 255);
     text-decoration: underline;
 }
+
+.back .disclaimer {
+    font-weight: 300;
+}

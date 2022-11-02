@@ -24,6 +24,9 @@ const StoAndAspBack = () => {
                     My story and aspirations - educational and career
                 </Link>
             </h3>
+            <div className={styles.dislaimer}>
+                * Best viewing on screens at least 1600px wide{" "}
+            </div>
         </div>
     );
 };

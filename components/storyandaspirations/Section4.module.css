@@ -1,13 +1,13 @@
 .section4 {
     z-index: 1;
     position: absolute;
-    top: 2580px;
+    top: 2525px;
     width: 1650px;
     height: 60rem;
     background: linear-gradient(
         to bottom,
         rgb(69, 69, 72),
-        rgb(242, 244, 255) 60px
+        rgb(242, 244, 255) 10%
     );
     padding-top: 15rem;
     display: flex;
@@ -21,7 +21,7 @@
     margin-top: 3rem;
 }
 
-.title2 {
+.title {
     position: absolute;
     width: 100%;
     top: 5rem;
@@ -63,4 +63,56 @@
     background-color: white;
     color: black;
     border: 2px solid black;
+}
+
+@media (min-width: 2500px) {
+    .section4 {
+        top: 3140px;
+        width: 2500px;
+        height: 1160px;
+    }
+    .title {
+        font-size: 3.5rem;
+        font-weight: 400;
+        top: 8rem;
+    }
+    .content {
+        margin-top: 10rem;
+    }
+    .texts {
+        margin-left: 4rem;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 1.05rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 3500px) {
+    .section4 {
+        top: 3920px;
+        width: 3500px;
+        height: 1260px;
+    }
+    .title {
+        font-size: 4rem;
+        font-weight: 500;
+        top: 10rem;
+    }
+    .content {
+        margin-top: 13rem;
+    }
+    .texts {
+        margin-left: 7rem;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 1.1rem;
+        margin: 1.5rem;
+    }
 }

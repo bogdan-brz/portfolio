@@ -1,10 +1,22 @@
 .page {
     position: relative;
     width: 100vw;
-    height: 10000px;
+    height: 3600px;
     background-color: rgb(255, 255, 255);
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 2500px) {
+    .page {
+        height: 4350px;
+    }
+}
+
+@media (min-width: 3500px) {
+    .page {
+        height: 5250px;
+    }
 }
