@@ -40,10 +40,11 @@ const Experience = () => {
                             it on AWS lightsail with its own domain:{" "}
                             <i>jobfomo.com</i>. It featured an elaborate admin
                             panel, that was only accessible to me and my
-                            "collegues". It was connected to a database, and
-                            allowed us to send emails to students that signed up
-                            from a google workspace email I created (I used
-                            nodemailer on the server to send those emails).
+                            &quot;collegues&quot;. It was connected to a
+                            database, and allowed us to send emails to students
+                            that signed up from a google workspace email I
+                            created (I used nodemailer on the server to send
+                            those emails).
                         </p>
                     </Project>
                     <Project
@@ -80,10 +81,11 @@ const Experience = () => {
                         <p>
                             This is a small game I made for my girlfriend (she
                             helped me with the drawings). Check out the link to
-                            the right to see what's it's all about. I made it in
-                            plain HTML, CSS, and Javascript. I utilized some
-                            concepts like object-oriented-programming, which I
-                            picked up making games in unity.
+                            the right to see what&apos;s it&apos;s all about. I
+                            made it in plain HTML, CSS, and Javascript. I
+                            utilized some concepts like
+                            object-oriented-programming, which I picked up
+                            making games in unity.
                         </p>
                     </Project>
                     <Project
@@ -93,10 +95,10 @@ const Experience = () => {
                         projectLink=""
                         deployLink="">
                         <p>
-                            This is my first project in NextJs. It's a website
-                            that lists project-templates (I made a few myself
-                            for the purpose of the project). It's main feature
-                            is nice UI in the <i>select</i> tab.
+                            This is my first project in NextJs. It&apos;s a
+                            website that lists project-templates (I made a few
+                            myself for the purpose of the project). It&apos;s
+                            main feature is nice UI in the <i>select</i> tab.
                         </p>
                     </Project>
                 </div>
@@ -159,8 +161,8 @@ const Experience = () => {
                             In this project I used the same model I trained in
                             Python, but this time exported it and used it in
                             tensorflowjs in the browser. Since it is in the
-                            browser, I didn't need to have an ExpressJs server
-                            (used the chrome app web server instead.)
+                            browser, I didn&quot;t need to have an ExpressJs
+                            server (used the chrome app web server instead.)
                         </p>
                     </Project>
                 </div>

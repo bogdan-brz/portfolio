@@ -58,7 +58,7 @@ const Section4 = () => {
                         I want to start a career in web development while in
                         college. I want to start off by working for a web
                         development agency rather than freelancing because
-                        that's a better way of getting experience I need.
+                        that&apos;s a better way of getting experience I need.
                     </p>
                     <p
                         className={`${styles.text2} ${

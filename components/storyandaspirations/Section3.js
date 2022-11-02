@@ -46,7 +46,7 @@ const Section3 = () => {
                 <div className={styles.img1}>
                     <Image src={battleshipsImg} layout="fill" />
                     <AtributionOverlay>
-                        honest recollection of the game's visuals
+                        honest recollection of the game&apos;s visuals
                     </AtributionOverlay>
                 </div>
                 <div className={styles.logo1}>
