@@ -1,9 +1,8 @@
 import styles from "./StoAndAsp.module.css";
-import grassImg from "../../public/grass.jpg";
-import officeImg from "../../public/office.jpg";
 import stoAndAspImg from "../../public/stoandasp.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const StoAndAspFront = () => {
     return (
@@ -17,6 +16,10 @@ const StoAndAspFront = () => {
 };
 
 const StoAndAspBack = () => {
+    const [screenWidth, setScreenWidth] = useState(0);
+    useEffect(() => {
+        setScreenWidth(window.innerWidth);
+    }, []);
     return (
         <div className={styles.back}>
             <h3 className={styles.title}>
@@ -25,7 +28,13 @@ const StoAndAspBack = () => {
                 </Link>
             </h3>
             <div className={styles.dislaimer}>
-                * Best viewing on screens at least 1600px wide{" "}
+                <div>* Best viewing on screens at least 1600px wide</div>
+                <div
+                    className={`${styles.second} ${
+                        screenWidth > 1600 ? styles.green : styles.red
+                    }`}>
+                    Your screen is {screenWidth}px wide
+                </div>
             </div>
         </div>
     );

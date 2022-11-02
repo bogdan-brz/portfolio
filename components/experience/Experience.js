@@ -105,8 +105,8 @@ const Experience = () => {
                 <h1 className={styles.title}>Machine Learning Projects</h1>
                 <div className="column">
                     <h3 className={styles.disclaimer}>
-                        Next 4 projects revolve around digit recognition, and
-                        they build on each other
+                        Next 4 projects revolve around handwritten digit
+                        recognition, and they build on each other
                     </h3>
                     <Project
                         name="Digit Recognition - annotation"

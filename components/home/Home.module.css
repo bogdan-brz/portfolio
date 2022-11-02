@@ -40,6 +40,14 @@
     margin-bottom: 3rem;
 }
 
+.contactSection {
+    margin: 5rem 2rem 5rem 2rem;
+}
+
+.emailText {
+    font-weight: 500;
+}
+
 @media (max-width: 960px) {
     .title {
         margin-bottom: 2rem;

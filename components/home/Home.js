@@ -21,6 +21,14 @@ const Home = () => {
                 <Card front={<ExperienceFront />} back={<ExperienceBack />} />
                 <Card front={<StoAndAspFront />} back={<StoAndAspBack />} />
             </div>
+            <div className={styles.contactSection}>
+                <div className={styles.contactText}>
+                    Your can reach me via email at{" "}
+                    <span className={styles.emailText}>
+                        bogdan.brzuchacz@gmail.com
+                    </span>
+                </div>
+            </div>
         </div>
     );
 };

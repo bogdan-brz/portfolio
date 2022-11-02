@@ -23,7 +23,7 @@ const Carousel = (props) => {
         let newId;
         setCurrCarouselIndex((id) => {
             newId = id;
-            if (id == 0) newId = 4;
+            if (id == 0) newId = props.images.length - 1;
             else newId--;
             return newId;
         });
