@@ -4,7 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <title>Bogdan's Portfolio</title>
+                <title>Bogdan&apos;s Portfolio</title>
                 <link rel="shortcut icon" href="" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
